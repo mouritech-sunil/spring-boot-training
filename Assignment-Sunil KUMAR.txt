@@ -1,0 +1,119 @@
+Q1. can you tell me real time usages of triggers?
+We use trigger when we want some event should happen automatically on certain desirable scenario.Lets take an example.
+You have a table which changes frequently,now you want to know how many times and when did these changes take place.
+in that case you can create a trigger which will insert desired data in any other table whenever any changes in your main table occur.
+
+Q2. why wrapper clases in java and their usages real-time.
+As the name says, a wrapper class wraps (encloses) around a data type and gives it an object appearance. Wherever, the data type is required as an object, 
+this object can be used. Wrapper classes include methods to unwrap the object and give back the data type.
+1) To convert simple data types into objects, that is, to give object form to a data type; here constructors are used.
+2) To convert strings into data types (known as parsing operations), here methods of type parseXXX() are used.
+
+Q3. Diff. b/w String Buffer and String Builder?
+Objects of String are immutable, and objects of StringBuffer and StringBuilder are mutable. StringBuffer and StringBuilder are similar, 
+but StringBuilder is faster and preferred over StringBuffer for the single-threaded program. If thread safety is needed, then StringBuffer is used.
+
+Q4. Diff. b/w List and Set in Collection framework?
+List is an ordered sequence of elements whereas Set is a distinct list of elements which is unordered.
+List:An ordered collection (also known as a sequence). The user of this interface has precise control over where in the list each element is inserted.
+The user can access elements by their integer index (position in the list), and search for elements in the list. Implemented using :LinkedList,ArrayList
+Set:A collection that contains no duplicate elements. More formally, sets contain no pair of elements e1 and e2 such that e1.equals(e2), 
+and at most one null element. As implied by its name, this interface models the mathematical set abstraction.
+Implemented using: HashSet (unordered),LinkedHashSet (ordered)
+
+Q5. Diff. b/w Checked and Unchecked Exceptions with examples?
+Checked Exceptions  :The Exceptions,which are checked by the compiler whether programmer handling or not ,for smooth execution of the program at runtime,are called checked exceptions.
+IOException,SQLException.
+UnChecked Exceptions  :The exceptions which are not checked by the compiler whether programmer handleing or not ,are called unchecked exceptions.
+AirthmeticException,NullPointerException
+
+Q6. Dff. b/w Statement and Prepared Statement and Color Statement in terms of security?
+The Prepared Statement is a slightly more powerful version of a Statement, and should always be at least as quick and easy to handle as a Statement.
+The Prepared Statement may be parametrized ,Most relational databases handles a JDBC / SQL query in four steps:
+1.Parse the incoming SQL query,2.Compile the SQL query,3.optimize the data acquisition path,4.Execute the optimized query
+A Statement will always proceed through the four steps above for each SQL query sent to the database. A Prepared Statement pre-executes steps (1) - (3) in the
+execution process above. Thus, when creating a Prepared Statement some pre-optimization is performed immediately. 
+The effect is to lessen the load on the database engine at execution time.
+
+Q6.1 Diff b/w JQuery and JavaScript(Purpose)?
+JavaScript uses JIT[Just in Time Compiler] which is combination of interpreter and Compile and is written in C. It's a combination of ECMA script and 
+DOM (Document Object Model). While JQuery Uses the resources that are provided by JavaScript to make things easier. It is a light-weight JavaScript library.
+
+Q6.2 Diff b/w Let and var in JS?
+var and let are both used for variable declaration in javascript but the difference between them is that var is function scoped and let is block scoped.
+It can be said that a variable declared with var is defined throughout the program as compared to let.
+
+Q7. Diff b/w ID Selector and Class Selector, examples?
+Difference between id and class attribute: The only difference between them is that “id” is unique in a page and can only apply to at most one element,
+while “class” selector can apply to multiple elements. HTML is the foundation of webpages, is used for webpage development by structuring websites and web apps.
+
+Q8 Usage of generics in java?
+The main objective of generics is to provide Type-Saftey and resolve Type-Casting problems.
+
+Q9. Java- 7 & 8 Features methods and classes?
+Java-8:Functional Interfaces,Lambda Expressions,Method References,Stream APIs,Optional Classes,String Joiners,Default and static methods in Interface.
+java-7:Compressed 64-bit pointers,Upgraded class-loader architecture,Multiple exception handling,JVM support for dynamically support languages,
+Upgraded Rowset 1.1 and JDBC 4.1,String object in a switch statement,Automatic resource management in a try statement .
+
+Q10. Need of State Management?
+State Management is important whether you are building a mobile app or a web application. It refers to the management of the state of one or more UI controls.
+UI controls can be text fields, radio buttons, checkboxes, dropdowns, toggles, form.
+
+Q11. JSP and JSTL Tags?
+JSP technology is used to create web application just like Servlet technology. It can be thought of as an extension to Servlet because it provides more functionality 
+than servlet such as expression language, JSTL.
+JSTL (JSP Standard Tag Library). The JSP Standard Tag Library (JSTL) represents a set of tags to simplify the JSP development.
+
+Q12. MVC Representational?
+Model: stores & manages data.View: Graphical User Interface,Controller: controller connects the model and view. The controller converts inputs from the view to demands to retrieve/update data in the model.
+The controller receives input from view, uses logic to translate the input to a demand for the model, the model grabs the data, the controller passes data from the model back 
+to the view for the user to see in a nice display.The view contains all functionality that directly interacts with the user - like clicking a button, or an enter event.
+
+Q13. Module @Qualifier in MVC?
+By using the @Qualifier annotation, we can eliminate the issue of which bean needs to be injected.we can avoid ambiguity when Spring finds multiple beans of the same type.
+
+Q14. Hibernate shards?
+Hibernate Shards is a framework that is designed to encapsulate and minimize this complexity by adding support for horizontal partitioning on top of Hibernate Core.
+Simply put, we aim to provide a unified view of multiple databases via Hibernate.
+
+Q15. HTML5 & 6 Features?
+HTML5:
+Encouraging semantic (meaningful) markup
+Separating design from content
+Promoting accessibility and design responsiveness
+Reducing the overlap between HTML, CSS, and JavaScript
+Supporting rich media experiences while eliminating the need for plugins such as Flash or Java
+HTML6:
+Automatic Image Resizing in the Browser
+Express Tags
+Additional Control over the Video Object
+Dedicated Libraries
+More Annotation Options
+Integrated Camera
+Stronger Authentication
+
+Q16. Some of the Selectors in CSS?
+Simple selectors (select elements based on name, id, class)
+Combinator selectors (select elements based on a specific relationship between them)
+Pseudo-class selectors (select elements based on a certain state)
+Pseudo-elements selectors (select and style a part of an element)
+
+Q17. Can we use JSP as controller?
+No,JSP only view purpuse.
+
+Q18. why spring is so populer(Advantages)?
+Spring is one of the most popular open source framework for developing enterprise applications. It provides comprehensive infrastructure support for developing 
+Java based applications. Spring also enables the developer to create high performing, reusable, easily testable and loose coupling enterprise Java application.
+
+Q19.what is IOC container?
+Spring IoC Container is a core part of the Spring framework which is used to manage the application bean. It injects dependencies when a bean is created and manages 
+the bean life cycle during execution.The fundamental tasks of Spring IoC are:Instantiating,Configuring, and Assembling Bean.
+The IOC container gets configuration related information from the Spring configuration file. That can be either XML or Java files.
+The container uses dependency injection (DI) to manage the components that make up an application.Spring provides two types of IOC containers:BeanFactory,Application Context.
+
+Q20.Spring standalone application,Scopes and Spring Beans, What is the default scope in spring beans.
+Spring Beans:Bean is an object in Spring that is managed by the Spring IoC Container. Spring creates bean with the configuration metadata that we have supplied in
+the <bean> tag of the XML file. We provide metadata to the IoC container either by using the XML file or by Java annotations.
+Scopes:It specifies the scope of beans such as singleton or prototype.
+default scope:singleton
+It is the default scope of a bean. It represents a single bean scope for each Spring IoC container.
